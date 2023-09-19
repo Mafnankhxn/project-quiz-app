@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Quiz</title>
+    <link rel="stylesheet" href="/dist/output.css">
+</head>
+<body class="h-screen bg-slate-950 flex justify-center items-center">
+    <div class="app bg-slate-50 rounded-lg w-1/2 shadow-xl">
+        <div class="elements m-5">
+            <h1 class="text-4xl font-bold border-b border-slate-300 pb-2">Simple Quiz</h1>
+            <h2 class="question text-2xl font-bold mt-3" id="question">Question will appear here</h2>
+            <div id="options" class="options grid gap-y-2 mt-3">
+                <input type="radio" name="answer" value="option1" class="ml-2">
+                <label for="option1" class="ml-2">Option 1</label>
+
+                <input type="radio" name="answer" value="option2" class="ml-2">
+                <label for="option2" class="ml-2">Option 2</label>
+
+                <input type="radio" name="answer" value="option3" class="ml-2">
+                <label for="option3" class="ml-2">Option 3</label>
+            </div>
+            <button id="nextbtn" class="nextbtn bg-black text-lg py-2 px-7 rounded-lg text-white mt-4">Next</button>
+            <p id="result" class="result text-xl font-semibold mt-4">
+                <!-- Score will appear here -->
+            </p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
